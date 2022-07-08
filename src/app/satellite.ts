@@ -21,3 +21,8 @@ export class Satellite {
 }
 
 // TODO 3a: fix isSpaceDebris check
+if isSpaceDebris == true {
+
+} else spaceDebris {
+	returns false;
+}
