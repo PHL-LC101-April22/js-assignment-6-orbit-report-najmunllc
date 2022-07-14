@@ -26,3 +26,6 @@
     <td>{{data.launchDate}}</td>
     
  </tr>*/
+
+ <tr *ngFor = "let d of satellites ; let odd = odd" [ngClass]="odd ? 'odd_col: 'even_col'">
+
