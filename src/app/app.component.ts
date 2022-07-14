@@ -50,6 +50,18 @@ export class AppComponent {
 		// this will cause Angular to re-make the table, but now only containing matches
 		this.displayList = matchingSatellites;
 	}
+	/*headers = ["Name", "Type", "Operational", "Orbit Type", "Launch Date"];
 
+	rows = [
+		{
+		"Name" : "",
+		"Type" : "",
+		"Operational" : "",
+		"Orbit Type" : "",
+		"Launch Date" : "",
+
+		},
+		
+	]*/
 
 }
