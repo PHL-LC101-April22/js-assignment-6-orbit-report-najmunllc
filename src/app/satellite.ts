@@ -1,3 +1,5 @@
+import { NgIf } from "@angular/common";
+
 export class Satellite {
 
 	name: string;
@@ -20,9 +22,15 @@ export class Satellite {
 
 }
 
+
+
 // TODO 3a: fix isSpaceDebris check
-if (isSpaceDebris === true {
-	return spaceDebris;
-} else {spaceDebris === isSpaceDebris
-	return false;
-})
+
+//isSpaceDebris returns true if the satellite type is 'Space Debris', and it returns false otherwise 
+
+//<div class="isSpaceDebris">
+ //<h3>Is Space Debrist</h3>
+	//<ol>
+		//<li *ngFor = "Space Debris">{{isSpaceDebris}}</li>
+	//</ol>
+//</div>
