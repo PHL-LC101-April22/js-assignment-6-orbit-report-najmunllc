@@ -1,5 +1,5 @@
 <table>
-    <tr class="header-row">
+    <tr class="header-row" [ngStyle]="{backgroungColor: p.isSpaceDebris === 'spaceDebris' ? '#D5F5E3' : '#FaDBD8'}">
         <th (click)="sort('name')" class="sortable">Name</th>
         <th (click)="sort('type')" class="sortable">Type</th>
         <th>Operational</th>
@@ -8,7 +8,7 @@
     </tr>
     <tr class="data-row" *ngFor = "let satellite of satellites">
         <td>{{satellite.name}}</td>
-        <td>{{satellite.type}}</td>
+        <td>{{satellite.type}} [ngStyle]="{color: p.isSpaceDebris === 'spaceDebris' ? 'Green' : 'Red'}" {{p.isSpaceDebris}}</td>
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>

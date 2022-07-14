@@ -15,7 +15,7 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		return this.type === "Space Debris;
    }
 
 }
@@ -23,6 +23,6 @@ export class Satellite {
 // TODO 3a: fix isSpaceDebris check
 if isSpaceDebris == true {
 
-} else spaceDebris {
+} else {spaceDebris 
 	returns false;
 }
