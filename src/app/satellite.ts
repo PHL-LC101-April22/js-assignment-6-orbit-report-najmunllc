@@ -17,8 +17,14 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return this.type === "Space Debris";
-   }
+		if(this.type === "Space Debris") {
+			return true;
+		}else {
+			return false;
+		}
+		
+   } 
+   
 
 }
 
@@ -27,10 +33,3 @@ export class Satellite {
 // TODO 3a: fix isSpaceDebris check
 
 //isSpaceDebris returns true if the satellite type is 'Space Debris', and it returns false otherwise 
-
-//<div class="isSpaceDebris">
- //<h3>Is Space Debrist</h3>
-	//<ol>
-		//<li *ngFor = "Space Debris">{{isSpaceDebris}}</li>
-	//</ol>
-//</div>
