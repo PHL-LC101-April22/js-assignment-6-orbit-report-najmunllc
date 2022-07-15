@@ -1,3 +1,5 @@
+import { NgIf } from "@angular/common";
+
 export class Satellite {
 
 	name: string;
@@ -15,9 +17,19 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
-   }
+		if(this.type === "Space Debris") {
+			return true;
+		}else {
+			return false;
+		}
+		
+   } 
+   
 
 }
 
+
+
 // TODO 3a: fix isSpaceDebris check
+
+//isSpaceDebris returns true if the satellite type is 'Space Debris', and it returns false otherwise 
